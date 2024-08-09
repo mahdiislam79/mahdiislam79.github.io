@@ -1,22 +1,18 @@
-# main links links
 main:
   - title: "Publications"
     url: /publications/
 
-  - title: "Talks"
-    url: /talks/    
+  - title: "Projects"
+    url: /projects/  # Make sure to create a projects page or directory if it doesn't exist
 
   - title: "Teaching"
     url: /teaching/    
     
-  - title: "Portfolio"
-    url: /portfolio/
-        
+  - title: "CV"
+    url: /cv/        
+
   - title: "Blog Posts"
     url: /year-archive/
-    
-  - title: "CV"
-    url: /cv/
     
   - title: "Guide"
     url: /markdown/
