@@ -10,9 +10,12 @@ main:
     
   - title: "CV"
     url: /cv/        
+    
+  - title: "Awards & Certifications"
+    url: /certifications/
 
   - title: "Blog Posts"
     url: /year-archive/
-    
-  - title: "Guide"
-    url: /markdown/
+
+  - title: "Contact"
+    url: /contact/
