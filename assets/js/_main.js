@@ -111,15 +111,22 @@
   
       if (prevButton && nextButton) {
         prevButton.addEventListener('click', () => {
-          imagesContainer.scrollLeft -= imagesContainer.clientWidth / 2; // Adjust scrolling by half the container width
+          imagesContainer.scrollLeft -= imagesContainer.clientWidth; // Scroll by the full container width
           updateIndicators();
         });
   
         nextButton.addEventListener('click', () => {
-          imagesContainer.scrollLeft += imagesContainer.clientWidth / 2; // Adjust scrolling by half the container width
+          imagesContainer.scrollLeft += imagesContainer.clientWidth; // Scroll by the full container width
           updateIndicators();
         });
       }
+  
+      indicators.forEach((indicator, index) => {
+        indicator.addEventListener('click', () => {
+          imagesContainer.scrollLeft = (index * imagesContainer.clientWidth);
+          updateIndicators();
+        });
+      });
   
       function updateIndicators() {
         const totalWidth = imagesContainer.scrollWidth - imagesContainer.clientWidth;
@@ -133,6 +140,5 @@
   
       updateIndicators();
     }
-  
   });
   

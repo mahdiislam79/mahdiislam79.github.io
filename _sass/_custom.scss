@@ -1,10 +1,13 @@
+.project-images-wrapper {
+  position: relative; /* To position navigation buttons correctly */
+}
+
 .project-images {
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
   width: 100%;
-  position: relative; /* For positioning the buttons */
   scroll-behavior: smooth; /* Smooth scrolling behavior */
   margin: 0 auto;
   max-width: 95%; /* Slightly reduce the width for better visibility */

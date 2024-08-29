@@ -12,12 +12,14 @@ author_profile: true
    <h3>{{ project.title }} <small>({{ project.date | date: "%B %Y" }})</small></h3>
    <p>{{ project.description }}</p>
    {% if project.images %}
-     <div class="project-images">
-       {% for image in project.images %}
-         <div class="project-image-container">
-           <img src="{{ image }}" alt="{{ project.title }}" class="project-image">
-         </div>
-       {% endfor %}
+     <div class="project-images-wrapper"> <!-- Wrapper to contain both the images and navigation -->
+       <div class="project-images">
+         {% for image in project.images %}
+           <div class="project-image-container">
+             <img src="{{ image }}" alt="{{ project.title }}" class="project-image">
+           </div>
+         {% endfor %}
+       </div>
        <!-- Navigation Arrows -->
        <div class="carousel-nav">
          <button class="prev">❮</button>
