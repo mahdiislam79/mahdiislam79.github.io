@@ -101,38 +101,38 @@
     const prevButton = document.querySelector('.prev');
     const nextButton = document.querySelector('.next');
     const indicators = document.querySelectorAll('.scroll-indicators .indicator');
-
+  
     if(imagesContainer) {
       imagesContainer.addEventListener('wheel', (e) => {
         e.preventDefault();
         imagesContainer.scrollLeft += e.deltaY;
         updateIndicators();
       });
-
+  
       if (prevButton && nextButton) {
         prevButton.addEventListener('click', () => {
           imagesContainer.scrollLeft -= imagesContainer.clientWidth / 2; // Adjust scrolling by half the container width
           updateIndicators();
         });
-
+  
         nextButton.addEventListener('click', () => {
           imagesContainer.scrollLeft += imagesContainer.clientWidth / 2; // Adjust scrolling by half the container width
           updateIndicators();
         });
       }
-
+  
       function updateIndicators() {
         const totalWidth = imagesContainer.scrollWidth - imagesContainer.clientWidth;
         const scrollLeft = imagesContainer.scrollLeft;
-
+  
         indicators.forEach((indicator, index) => {
           const indicatorPos = (index / (indicators.length - 1)) * totalWidth;
           indicator.classList.toggle('active', scrollLeft >= indicatorPos && scrollLeft < indicatorPos + (totalWidth / indicators.length));
         });
       }
-
+  
       updateIndicators();
     }
-
+  
   });
   

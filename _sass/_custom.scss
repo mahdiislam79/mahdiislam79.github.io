@@ -2,66 +2,64 @@
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
   width: 100%;
-  position: relative;
+  position: relative; /* For positioning the buttons */
+  scroll-behavior: smooth; /* Smooth scrolling behavior */
+  margin: 0 auto;
+  max-width: 95%; /* Slightly reduce the width for better visibility */
 }
 
 .project-image-container {
-  scroll-snap-align: start;
-  flex-shrink: 0;
-  width: 95%; /* Slightly smaller width to show part of the next image */
-  box-sizing: border-box;
-  margin-right: 5%; /* Space between images */
+  flex: 0 0 100%; /* Ensure each image takes up full width */
+  scroll-snap-align: center; /* Center-aligns the image during scroll */
+  position: relative;
+  max-width: 100%;
+  text-align: center;
 }
 
 .project-image {
-  max-width: 100%;
-  height: auto;
-  max-height: 400px; /* Adjust to make images smaller */
-  margin: auto;
-  display: block;
-  object-fit: contain;
+  max-width: 90%; /* Make images slightly smaller to improve layout */
+  height: auto; /* Maintain aspect ratio */
   border-radius: 5px;
-  cursor: pointer;
+  margin: 0 auto; /* Center images */
 }
 
-/* Optional: Scroll Arrows */
-.carousel-nav {
+.prev, .next {
   position: absolute;
   top: 50%;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
   transform: translateY(-50%);
-  pointer-events: none;
-}
-
-.carousel-nav button {
-  pointer-events: all;
-  background: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
   padding: 10px;
   cursor: pointer;
-  border-radius: 50%;
+  z-index: 1;
 }
 
-/* Optional: Scroll Indicators */
+.prev {
+  left: 10px; /* Adjust for better visibility */
+}
+
+.next {
+  right: 10px; /* Adjust for better visibility */
+}
+
 .scroll-indicators {
-  text-align: center;
+  display: flex;
+  justify-content: center;
   margin-top: 10px;
 }
 
-.scroll-indicators span {
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  margin: 0 2px;
-  background-color: #ddd;
+.scroll-indicators .indicator {
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
+  background-color: lightgray;
+  margin: 0 5px;
   cursor: pointer;
 }
 
-.scroll-indicators span.active {
-  background-color: #666;
+.scroll-indicators .indicator.active {
+  background-color: gray;
 }
