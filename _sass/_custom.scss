@@ -1,18 +1,67 @@
-.btn {
-    text-decoration: none; /* Removes underline */
-    background-color: #87CEEB; /* Mild blue color */
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 5px; /* Rounded corners */
+.project-images {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  width: 100%;
+  position: relative;
 }
 
-.btn:hover {
-    background-color: #4682B4; /* Darker blue on hover */
+.project-image-container {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 95%; /* Slightly smaller width to show part of the next image */
+  box-sizing: border-box;
+  margin-right: 5%; /* Space between images */
+}
+
+.project-image {
+  max-width: 100%;
+  height: auto;
+  max-height: 400px; /* Adjust to make images smaller */
+  margin: auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Optional: Scroll Arrows */
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.carousel-nav button {
+  pointer-events: all;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+/* Optional: Scroll Indicators */
+.scroll-indicators {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.scroll-indicators span {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin: 0 2px;
+  background-color: #ddd;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.scroll-indicators span.active {
+  background-color: #666;
 }

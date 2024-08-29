@@ -14,3 +14,12 @@ permalink: /projects/
 </li>
 {% endfor %}
 </ul>
+
+<div class="project-images">
+   {% for image in page.images %}
+     <a href="{{ image }}" class="image-popup">
+       <img src="{{ image }}" alt="Project Image" class="project-image">
+     </a>
+   {% endfor %}
+ </div>
+ 
