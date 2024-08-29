@@ -11,6 +11,9 @@ author_profile: true
 <li>
    <h3>{{ project.title }} <small>({{ project.date | date: "%B %Y" }})</small></h3>
    <p>{{ project.description }}</p>
+   {% if project.keywords %}
+     <p><strong>Keywords:</strong> {{ project.keywords }}</p>
+   {% endif %}
    {% if project.images %}
      <div class="project-images-wrapper"> <!-- Wrapper to contain both the images and navigation -->
        <div class="project-images">

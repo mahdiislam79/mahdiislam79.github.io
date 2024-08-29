@@ -22,7 +22,7 @@
 }
 
 .project-image {
-  max-width: 90%; /* Make images slightly smaller to improve layout */
+  max-width: 75%; /* Reduce from 90% to 80% for smaller images */
   height: auto; /* Maintain aspect ratio */
   border-radius: 5px;
   margin: 0 auto; /* Center images */
