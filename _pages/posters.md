@@ -14,7 +14,7 @@ author_profile: true
 
    {% if poster.poster_url %}
      <p><strong>Poster:</strong></p>
-     <iframe src="{{ poster.poster_url }}" style="width:100%; height:900px; border:none;" allowfullscreen="true" loading="lazy">
+     <iframe src="{{ poster.poster_url }}" style="width:80%; height:900px; border:none;" allowfullscreen="true" loading="lazy">
        Your browser does not support embedded PDFs. You can download the PDF file <a href="{{ poster.poster_url }}">here</a>.
      </iframe>
    {% endif %}
