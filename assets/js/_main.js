@@ -20,7 +20,7 @@ $(document).ready(function() {
                   left: -imagesContainer.clientWidth, // Move left by the width of the container
                   behavior: 'smooth' // Smooth scroll animation
               });
-              updateIndicators();
+              setTimeout(updateIndicators, 500); // Update after animation delay
           });
       }
 
@@ -31,7 +31,7 @@ $(document).ready(function() {
                   left: imagesContainer.clientWidth, // Move right by the width of the container
                   behavior: 'smooth' // Smooth scroll animation
               });
-              updateIndicators();
+              setTimeout(updateIndicators, 500); // Update after animation delay
           });
       }
 
@@ -42,7 +42,7 @@ $(document).ready(function() {
                   left: index * imagesContainer.clientWidth,
                   behavior: 'smooth'
               });
-              updateIndicators();
+              setTimeout(updateIndicators, 500); // Update after animation delay
           });
       });
 
@@ -60,11 +60,4 @@ $(document).ready(function() {
       // Update indicators on load
       updateIndicators();
   }
-
-  // PDF embedding logic (optional for PDFs)
-  $(".pdf-embed").each(function() {
-      const url = $(this).data('pdf-url');
-      const iframe = `<iframe src="${url}" type="application/pdf" width="100%" height="600px"></iframe>`;
-      $(this).html(iframe);
-  });
 });
