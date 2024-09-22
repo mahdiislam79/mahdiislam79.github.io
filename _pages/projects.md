@@ -39,6 +39,9 @@ author_profile: true
    {% if project.code_url %}
       <a href="{{ project.code_url }}" class="btn">Code</a>
    {% endif %}
+   {% if project.application_url %}
+      <a href="{{ project.application_url }}" class="btn">Application</a>
+   {% endif %}
    {% if project.report_url %}
       <a href="{{ project.report_url }}" class="btn">Report</a>
    {% endif %}
