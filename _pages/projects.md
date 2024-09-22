@@ -15,11 +15,11 @@ author_profile: true
      <p><strong>Keywords:</strong> {{ project.keywords }}</p>
    {% endif %}
    {% if project.images %}
-     <div class="project-images-wrapper"> <!-- Wrapper to contain both the images and navigation -->
-       <div class="project-images">
+     <div class="project-images-wrapper images-wrapper"> <!-- Reusing shared wrapper class -->
+       <div class="project-images images"> <!-- Reusing shared images class -->
          {% for image in project.images %}
-           <div class="project-image-container">
-             <img src="{{ image }}" alt="{{ project.title }}" class="project-image">
+           <div class="project-image-container image-container"> <!-- Reusing shared image-container class -->
+             <img src="{{ image }}" alt="Image for {{ project.title }}" class="project-image image" loading="lazy"> <!-- Lazy loading and descriptive alt -->
            </div>
          {% endfor %}
        </div>

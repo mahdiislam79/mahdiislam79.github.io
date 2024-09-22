@@ -215,6 +215,10 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
+  posters:
+    output: true
+    permalink: /posters/:path/
+
 
 
 # Defaults

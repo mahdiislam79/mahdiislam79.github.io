@@ -5,6 +5,9 @@ main:
   - title: "Projects"
     url: /projects/  # Make sure to create a projects page or directory if it doesn't exist
 
+  - title: "Poster Presentations"      
+    url: /posters/
+
   - title: "Teaching"
     url: /teaching/    
     

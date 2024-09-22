@@ -66,3 +66,72 @@
 .scroll-indicators .indicator.active {
   background-color: gray;
 }
+.poster-images-wrapper {
+  position: relative;
+}
+
+.poster-images {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  scroll-behavior: smooth;
+  margin: 0 auto;
+  max-width: 95%;
+}
+
+.poster-image-container {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  position: relative;
+  max-width: 100%;
+  text-align: center;
+}
+
+.poster-image {
+  max-width: 75%;
+  height: auto;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.scroll-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.scroll-indicators .indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: lightgray;
+  margin: 0 5px;
+}
+
+.scroll-indicators .indicator.active {
+  background-color: gray;
+}
+
+object {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  background-color: white; /* Prevent black background */
+  overflow: hidden; /* Ensure no extra scrollbars */
+}
+
+iframe {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: none; /* Remove any borders from iframes */
+  background-color: white;
+}
