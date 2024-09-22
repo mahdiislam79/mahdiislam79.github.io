@@ -11,6 +11,6 @@ permalink: /posters/diabetic-retinopathy-detection/
 
 If the embedded PDF below does not load, you can download it [here]({{ poster.poster_url }}).
 
-<iframe src="{{ poster.poster_url }}" width="100%" height="1200px" style="border:none;">
+<iframe src="{{ poster.poster_url }}" width="100%" height="600px" style="border:none;">
     <p>Your browser does not support iframes. You can download the PDF file <a href="{{ poster.poster_url }}">here</a>.</p>
 </iframe>
