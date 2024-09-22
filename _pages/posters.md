@@ -4,7 +4,13 @@ title: "Poster Presentations"
 permalink: /posters/
 author_profile: true
 ---
-
+<style>
+iframe {
+  width: 100%;
+  height: 1000px;
+  border: none;
+}
+</style>
 <ul>
 {% assign sorted_posters = site.posters | sort: 'date' | reverse %}
 {% for poster in sorted_posters %}
@@ -14,10 +20,13 @@ author_profile: true
 
    {% if poster.poster_url %}
      <p><strong>Poster:</strong></p>
-     <iframe src="{{ poster.poster_url }}" style="width:80%; height:900px; border:none;" allowfullscreen="true" loading="lazy">
+     <iframe src="{{ poster.poster_url }}" style="width:100%; height:900px; border:none;" allowfullscreen="true" loading="lazy">
        Your browser does not support embedded PDFs. You can download the PDF file <a href="{{ poster.poster_url }}">here</a>.
      </iframe>
    {% endif %}
 </li>
 {% endfor %}
 </ul>
+
+
+
