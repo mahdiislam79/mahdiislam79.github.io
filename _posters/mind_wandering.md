@@ -11,6 +11,6 @@ permalink: /posters/mind-wandering-detection/
 
 If the embedded PDF below does not load, you can download it [here]({{ poster.poster_url }}).
 
-<iframe src="{{ poster.poster_url }}" width="100%" height="1200px" style="transform: scale(0.8); transform-origin: 0 0; border:none;">
+<iframe src="https://drive.google.com/file/d/13Jt8VSwwTv8aQ5XX6-9k1_UoOxpkxScT/view?usp=drive_link" width="100%" height="1200px" style="transform: scale(0.8); transform-origin: 0 0; border:none;">
     <p>Your browser does not support iframes. You can download the PDF file <a href="{{ poster.poster_url }}">here</a>.</p>
 </iframe>
