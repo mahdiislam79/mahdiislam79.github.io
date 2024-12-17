@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 👋 Hi! I’m **Mahdi Islam**, a researcher specializing in **Deep Learning**, **Computer Vision**, and **Biomedical Image Processing**.  
-📚 **I’m currently in my third semester of the Erasmus Mundus Joint Master’s program in Medical Imaging and Applications (MAIA)** and preparing for my master’s thesis at the **Medical University of Innsbruck, Austria**, focusing on **AI-driven advancements in cardiovascular imaging ❤️**.  
+📚 **I’m currently in my third semester of the Erasmus Mundus Joint Master’s program in Medical Imaging and Applications (MAIA)** and preparing for my master’s thesis at the **Medical University of Innsbruck, Austria**, focusing on **AI-driven advancements in cardiovascular imaging**.  
 
 🎓 I am actively seeking **funded PhD opportunities for Fall 2025** to continue contributing to impactful research in **AI-driven healthcare innovations 🚀**.
 
