@@ -2,35 +2,50 @@
 permalink: /
 title: "About"
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
 
-Hi! I’m Mahdi Islam, a researcher specializing in Deep Learning, Computer Vision, and Biomedical Image Processing. **I’m currently in my third semester of an Erasmus Mundus Joint Master’s degree in Medical Imaging and Applications (MAIA) and actively seeking funded internship opportunities for my master’s thesis in the fourth semester.** My aim is to contribute to groundbreaking research in medical imaging and AI, driving innovation in healthcare.
+Hi! I’m **Mahdi Islam**, a researcher specializing in **Deep Learning**, **Computer Vision**, and **Biomedical Image Processing**. **I’m currently in my third semester of the Erasmus Mundus Joint Master’s program in Medical Imaging and Applications (MAIA)** and preparing for my master’s thesis at the Medical University of Innsbruck, Austria, focusing on AI-driven advancements in cardiovascular imaging. I am actively seeking **funded PhD opportunities for Fall 2025** to continue contributing to impactful research in AI-driven healthcare innovations.
 
-### Areas of Expertise
-- **Medical Image Segmentation**: 
-  - Segmentation of various organs and tissues (e.g., brain, colorectal tissue).
-- **Deep Learning**: 
-  - Vision language models (VLMs).
-  - Convolutional neural networks (CNNs).
-  - Large language models (LLMs).
-  - Retrieval augmented generation (RAG).
-- **Medical Image Processing and Analysis**: 
-  - Colorectal cancer classification.
-  - Gait anomaly detection.
-  
-### Research Interests
-I am deeply interested in applying deep learning and large language models (LLMs) to the following fields:
-  - **Neuroimaging**: Enhancing brain imaging analysis with advanced AI techniques.
-  - **Neuroscience**: Leveraging AI to understand and map neural processes.
-  - **Cardiovascular Imaging**: Improving diagnostics in cardiovascular health using deep learning.
-  - **Stroke Analysis**: Developing AI-driven methods for early detection and treatment of stroke.
-  - **Cancer and Histopathology**: Utilizing machine learning to better classify and segment cancerous tissues.
+## Areas of Expertise
+- **Medical Image Segmentation**:
+  - Brain tissue segmentation (Grey Matter, White Matter, CSF).
+  - Colorectal tissue and gland segmentation.
+- **Deep Learning**:
+  - Vision-Language Models (VLMs) and Foundation Models.
+  - Convolutional Neural Networks (CNNs).
+  - Semi/Weakly Supervised Segmentation.
+- **Medical Image Processing and Analysis**:
+  - Cancer detection and histopathology analysis.
+  - Gait anomaly detection with real-time predictive models.
 
-### Professional Background
-- **Lecturer, Metropolitan University**: Prior to my master’s program, I was a lecturer, where I honed my expertise in teaching core topics of Computer Science and Engineering domain.
-- **Bachelor’s Degree**: Graduated from the Islamic University of Technology with a focus on machine learning in medical imaging.
+## Research Interests
+I’m passionate about leveraging **deep learning and vision-language models** to transform medical imaging and diagnostics, with a focus on:
+- **Neuroimaging**: AI-enhanced analysis for brain mapping.
+- **Cardiovascular Imaging**: Echocardiogram-based diagnostics.
+- **Stroke Analysis**: AI-driven methods for early stroke detection.
+- **Cancer and Histopathology**: Machine learning pipelines for tissue classification and segmentation.
+- **Image Reconstruction & Synthesis**: For accurate diagnosis and prognosis.
 
-I’m passionate about integrating AI into healthcare, fostering innovation, and making a tangible impact in the medical field.
+## Professional Background
+- **Visiting Research Student (Upcoming)**:  
+  - *Medical University of Innsbruck, Austria* (Master’s Thesis, 2025).  
+  - Research focus: Few-shot video-based vision-language models.
+- **Lecturer, Department of Computer Science & Engineering**:  
+  - *Metropolitan University, Bangladesh (2022-2023)*  
+  - Introduced machine learning concepts, inspiring students to pursue research-based theses.
+- **Undergraduate Research Assistant**:  
+  - *Islamic University of Technology (2021-2022)*  
+  - Developed a novel gait analysis pipeline using **CNNs** and sensor-acquired heat-map data.
+
+## Notable Projects
+- **Atlas and Tissue-Model Guided Gaussian Mixture Models for Brain Tissue Segmentation**
+- **Skin Cancer Detection: ML vs. DL Comparison**
+- **Automatic Knee Rehabilitation Exercises with UR3 Robot**
+- **Colorectal Cancer Tissue Classification and Segmentation**
+
+For a detailed view of my projects, visit my [GitHub](https://github.com/mahdiislam79).
+
+I’m passionate about integrating AI into healthcare, fostering innovation, and making a tangible impact on patients’ lives. Let’s connect and collaborate!
