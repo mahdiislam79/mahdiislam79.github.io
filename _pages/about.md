@@ -8,23 +8,25 @@ redirect_from:
 ---
 
 👋 Hi! I’m **Mahdi Islam**, a researcher specializing in **Deep Learning**, **Computer Vision**, and **Biomedical Image Processing**.  
-📚 **I’m currently in my last semester of the Erasmus Mundus Joint Master’s program in Medical Imaging and Applications (MAIA)** and doing my master’s thesis at the **Medical University of Innsbruck, Austria**, focusing on **Semi-supervised segmentation strategies for cardiovascular imaging**.  
+📚 **I’ve recently graduated from the Erasmus Mundus Joint Master’s program in MedicAl Imaging and Applications (MAIA)** and completed my master’s thesis at the **Medical University of Innsbruck, Austria**, focusing on **Annotation-efficient medical image segmentation for decision support in minimally invasive cardiac interventions.**.  
 
-🎓 I am actively seeking **funded PhD opportunities for Fall 2025** to continue contributing to impactful research in **AI-driven healthcare innovations 🚀**.
+<!-- 🎓 I am actively seeking **funded PhD opportunities for Fall 2025** to continue contributing to impactful research in **AI-driven healthcare innovations 🚀**. -->
 
 ---
 
 ## 🧠 **Areas of Expertise**
-- **🧩 Medical Image Segmentation**:
+- **🤖 Deep Learning**:
+  - Vision-Language Models (VLMs) and Foundation Models.  
+  - Convolutional Neural Networks (CNNs).  
+  - Large Language Models
+  - Parameter Efficient Finetuning
+  - Semi/Weakly Supervised Learning.
+- **Medical Image Segmentation**:
   - 🧠 Brain tissue segmentation (Grey Matter, White Matter, CSF).  
   - 🏥 Colorectal tissue and gland segmentation.
   - Aorta structures segmentation
   - Cervical region segmentation
-- **🤖 Deep Learning**:
-  - 🔗 Vision-Language Models (VLMs) and Foundation Models.  
-  - 🌀 Convolutional Neural Networks (CNNs).  
-  - 📉 Semi/Weakly Supervised Segmentation.
-- **📊 Medical Image Processing and Analysis**:
+- **Medical Image Processing and Analysis**:
   - 🩺 Cancer detection and histopathology analysis.  
   - 🚶 Gait anomaly detection with real-time predictive models.
 
