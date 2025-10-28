@@ -24,7 +24,7 @@ author:
   avatar           : "20240109_110142~2.jpg"
   name             : "Mahdi Islam"
   pronouns         : # example: "he"  
-  bio              : "Master Student in Medical Imaging and Applications (MAIA), Erasmus Mundus Joint Master's Programme"
+  bio              : "Master Graduate in MedicAl Imaging and Applications (MAIA), Erasmus Mundus Joint Master's Programme"
   location         : "Innsbruck, Austria"
   employer         : "Medical University of Innsbruck"
   url              : # URL
@@ -34,7 +34,7 @@ author:
   arxiv            : # URL - Update with the correct link to your profile
   googlescholar    : "https://scholar.google.com/citations?hl=en&authuser=1&user=DMOyNi8AAAAJ"
   impactstory      : # URL
-  orcid            : # URL
+  orcid            : "https://orcid.org/0009-0009-5978-0471"
   semantic         : # URL
   pubmed           : # URL
   researchgate     : "https://www.researchgate.net/profile/Mahdi-Islam-2"
