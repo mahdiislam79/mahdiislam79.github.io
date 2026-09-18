@@ -20,9 +20,13 @@ iframe {
 
    {% if poster.poster_url %}
      <p><strong>Poster:</strong></p>
-     <iframe src="{{ poster.poster_url }}" style="width:100%; height:900px; border:none;" allowfullscreen="true" loading="lazy">
-       Your browser does not support embedded PDFs. You can download the PDF file <a href="{{ poster.poster_url }}">here</a>.
-     </iframe>
+     {% if poster.poster_url contains ".png" or poster.poster_url contains ".jpg" or poster.poster_url contains ".jpeg" %}
+       <img src="{{ poster.poster_url }}" alt="{{ poster.title }}" style="max-width:100%; height:auto; display:block; margin:0 auto;" loading="lazy">
+     {% else %}
+       <iframe src="{{ poster.poster_url }}" style="width:100%; height:900px; border:none;" allowfullscreen="true" loading="lazy">
+         Your browser does not support embedded PDFs. You can download the PDF file <a href="{{ poster.poster_url }}">here</a>.
+       </iframe>
+     {% endif %}
    {% endif %}
 </li>
 {% endfor %}

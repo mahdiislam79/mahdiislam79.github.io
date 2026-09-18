@@ -14,6 +14,16 @@ redirect_from:
 
 ---
 
+## 🎓 **Master's Thesis**
+**Uncertainty-Guided Active Learning Based Aortic Structure Segmentation for Optimized TAVI Access Route Planning**
+*Medical University of Innsbruck, Austria — June 2025*
+
+Transcatheter Aortic Valve Implantation (TAVI) requires accurate preoperative planning of the vascular access route, but manually annotating the thin, convoluted iliac arteries in 3D is slow and labor-intensive. My thesis developed an active learning pipeline guided by probabilistic uncertainty to segment aortic structures from CMR with minimal manual annotation, feeding directly into an automated downstream workflow for diameter quantification via skeletonization and graph-based centerline extraction. Trained over five active learning iterations, the pipeline reached a final Dice score of **0.912** with a diameter-quantification MAPE of **4.92%**, and a modality ablation study showed post-contrast CMR substantially outperforming pre-contrast data — identifying data quality as the most critical factor for robust performance.
+
+[Download the full thesis (PDF)](/files/Mahdi_Master_Thesis.pdf){: .btn} [View the thesis poster](/posters/tavi-thesis-poster/){: .btn}
+
+---
+
 ## 🧠 **Areas of Expertise**
 - **🤖 Deep Learning**:
   - Vision-Language Models (VLMs) and Foundation Models.  
