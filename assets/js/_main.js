@@ -1,11 +1,30 @@
 $(document).ready(function() {
-  // Carousel for project images
-  const imagesContainer = document.querySelector('.project-images');
-  const prevButton = document.querySelector('.prev');
-  const nextButton = document.querySelector('.next');
-  const indicators = document.querySelectorAll('.scroll-indicators .indicator');
+  // Carousel for project images — the /projects/ page renders one of these
+  // blocks per project, so each wrapper needs its own scoped controls
+  // instead of a single global querySelector.
+  const wrappers = document.querySelectorAll('.project-images-wrapper');
+  const indicatorGroups = document.querySelectorAll('.scroll-indicators');
 
-  if (imagesContainer) {
+  wrappers.forEach((wrapper, wrapperIndex) => {
+      const imagesContainer = wrapper.querySelector('.project-images');
+      const prevButton = wrapper.querySelector('.prev');
+      const nextButton = wrapper.querySelector('.next');
+      const indicatorGroup = indicatorGroups[wrapperIndex];
+      const indicators = indicatorGroup ? indicatorGroup.querySelectorAll('.indicator') : [];
+
+      if (!imagesContainer) return;
+
+      // Function to update the active indicator
+      function updateIndicators() {
+          const totalWidth = imagesContainer.scrollWidth - imagesContainer.clientWidth;
+          const scrollLeft = imagesContainer.scrollLeft;
+
+          indicators.forEach((indicator, index) => {
+              const indicatorPos = (index / (indicators.length - 1)) * totalWidth;
+              indicator.classList.toggle('active', scrollLeft >= indicatorPos && scrollLeft < indicatorPos + (totalWidth / indicators.length));
+          });
+      }
+
       // Scroll event listener with wheel
       imagesContainer.addEventListener('wheel', (e) => {
           e.preventDefault();
@@ -46,18 +65,7 @@ $(document).ready(function() {
           });
       });
 
-      // Function to update the active indicator
-      function updateIndicators() {
-          const totalWidth = imagesContainer.scrollWidth - imagesContainer.clientWidth;
-          const scrollLeft = imagesContainer.scrollLeft;
-
-          indicators.forEach((indicator, index) => {
-              const indicatorPos = (index / (indicators.length - 1)) * totalWidth;
-              indicator.classList.toggle('active', scrollLeft >= indicatorPos && scrollLeft < indicatorPos + (totalWidth / indicators.length));
-          });
-      }
-
       // Update indicators on load
       updateIndicators();
-  }
+  });
 });
