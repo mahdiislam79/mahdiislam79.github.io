@@ -47,6 +47,28 @@ layout: default
       <section class="page__content" itemprop="text">
         {{ content }}
 
+        {% if page.collection == "publications" %}
+          {% if page.excerpt %}
+            <p>{{ page.excerpt }}</p>
+          {% endif %}
+          {% if page.authors %}
+            <p><strong>Authors:</strong> {{ page.authors }}</p>
+          {% endif %}
+          {% if page.venue %}
+            <p><strong>Venue:</strong> {{ page.venue }}</p>
+          {% endif %}
+          {% if page.status %}
+            <p><strong>Status:</strong> {{ page.status }}</p>
+          {% endif %}
+          {% if page.citation %}
+            <p><strong>Recommended citation:</strong> {{ page.citation }}</p>
+          {% endif %}
+          <p>
+            {% if page.paper_url %}<a href="{{ page.paper_url }}" class="btn">Read Paper</a>{% endif %}
+            {% if page.code_url %}<a href="{{ page.code_url }}" class="btn">Code</a>{% endif %}
+          </p>
+        {% endif %}
+
         {% if page.collection == "projects" %}
           {% if page.description %}
             <p>{{ page.description }}</p>

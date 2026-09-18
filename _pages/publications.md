@@ -19,11 +19,21 @@ author_profile: true
    <p>{{ publication.excerpt }}</p>
    <p><strong>Authors:</strong> {{ publication.authors }}</p>
    <p><strong>Conference:</strong> {{ publication.venue }}</p>
-   <p><strong>Publisher:</strong> {{ publication.publisher }}</p>
-   <p><strong>Total Citations:</strong> {{ publication.citations }}</p>
-   
+   {% if publication.publisher %}
+      <p><strong>Publisher:</strong> {{ publication.publisher }}</p>
+   {% endif %}
+   {% if publication.status %}
+      <p><strong>Status:</strong> {{ publication.status }}</p>
+   {% endif %}
+   {% if publication.citations %}
+      <p><strong>Total Citations:</strong> {{ publication.citations }}</p>
+   {% endif %}
+
    {% if publication.paper_url %}
       <a href="{{ publication.paper_url }}" class="btn">Read Paper</a>
+   {% endif %}
+   {% if publication.code_url %}
+      <a href="{{ publication.code_url }}" class="btn">Code</a>
    {% endif %}
    {% if publication.presentation_url %}
       <a href="{{ publication.presentation_url }}" class="btn">View Presentation</a>
