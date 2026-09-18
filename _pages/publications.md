@@ -32,6 +32,9 @@ author_profile: true
    {% if publication.paper_url %}
       <a href="{{ publication.paper_url }}" class="btn">Read Paper</a>
    {% endif %}
+   {% if publication.arxiv_url %}
+      <a href="{{ publication.arxiv_url }}" class="btn">arXiv</a>
+   {% endif %}
    {% if publication.code_url %}
       <a href="{{ publication.code_url }}" class="btn">Code</a>
    {% endif %}

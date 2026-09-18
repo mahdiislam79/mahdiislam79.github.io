@@ -65,6 +65,7 @@ layout: default
           {% endif %}
           <p>
             {% if page.paper_url %}<a href="{{ page.paper_url }}" class="btn">Read Paper</a>{% endif %}
+            {% if page.arxiv_url %}<a href="{{ page.arxiv_url }}" class="btn">arXiv</a>{% endif %}
             {% if page.code_url %}<a href="{{ page.code_url }}" class="btn">Code</a>{% endif %}
           </p>
         {% endif %}
