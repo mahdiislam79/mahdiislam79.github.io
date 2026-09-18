@@ -1,0 +1,8 @@
+# Local development override — do NOT use for production builds.
+# Usage: bundle exec jekyll serve --config _config.yml,_config_dev.yml
+#
+# The theme builds every internal link (nav, sidebar, footer, etc.) from
+# site.url, which _config.yml hardcodes to the production domain. Without
+# this override, clicking any link on the local dev server navigates to
+# the live GitHub Pages site instead of staying on localhost.
+url: "http://localhost:4000"
