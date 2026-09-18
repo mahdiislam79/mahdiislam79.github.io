@@ -8,5 +8,6 @@ venue: "IEEE 22nd International Symposium on Biomedical Imaging (ISBI)"
 citation: 'Mahdi Islam, Musarrat Tabassum, Marta Elbatel, Agnes Mayr, Christian Kremser, Markus Haltmeier, Enrique Almar-Muñoz. "Semi-Supervised Transformer-Based Cervical Segmentation: FUGC 2025 Challenge." IEEE 22nd International Symposium on Biomedical Imaging (ISBI), 2025.'
 authors: "Mahdi Islam, Musarrat Tabassum, Marta Elbatel, Agnes Mayr, Christian Kremser, Markus Haltmeier, Enrique Almar-Muñoz"
 publisher: "IEEE"
+paper_url: "https://zenodo.org/records/16017188"
 keywords: "Fetal Ultrasound, Semantic Segmentation, Weak-to-Strong Consistency, Vision Transformer"
 ---
