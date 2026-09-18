@@ -5,7 +5,7 @@ date: "2024-11-01"
 code_url: "https://github.com/mahdiislam79/ISIC_Skin_Cancer_Classification-ML"
 presentation_url: "/files/Skin_Cancer_Classification_Presentation.pdf"
 images:
-  - "/images/skin_cancer/Preprocessing.PNG"
+  - "/images/skin_cancer/Preprocessing.jpg"
   - "/images/skin_cancer/result_binary.PNG"
   - "/images/skin_cancer/label_overlap_umap.PNG"
   - "/images/skin_cancer/result_multiclass.PNG"

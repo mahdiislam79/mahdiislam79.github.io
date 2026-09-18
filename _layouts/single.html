@@ -47,6 +47,30 @@ layout: default
       <section class="page__content" itemprop="text">
         {{ content }}
 
+        {% if page.collection == "projects" %}
+          {% if page.description %}
+            <p>{{ page.description }}</p>
+          {% endif %}
+          {% if page.keywords %}
+            <p><strong>Keywords:</strong> {{ page.keywords }}</p>
+          {% endif %}
+          {% if page.images %}
+            <div class="project-images-wrapper images-wrapper">
+              <div class="project-images images">
+                {% for image in page.images %}
+                  <div class="project-image-container image-container">
+                    <img src="{{ image }}" alt="Image for {{ page.title }}" class="project-image image" loading="lazy">
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+          {% endif %}
+          <p>
+            {% if page.code_url %}<a href="{{ page.code_url }}" class="btn">Code</a>{% endif %}
+            {% if page.presentation_url %}<a href="{{ page.presentation_url }}" class="btn">Presentation</a>{% endif %}
+          </p>
+        {% endif %}
+
         {% if page.citation and page.paperurl and page.slidesurl %}
           <p style="font-size: smaller">Recommended citation: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ page.slidesurl }}">Download Slides</a></p>
         {% elsif page.citation and page.paperurl %}

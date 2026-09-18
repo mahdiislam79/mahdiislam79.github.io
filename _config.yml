@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "Mahdi Islam"
 title_separator          : "-"
 name                     : &name "Mahdi Islam"
-description              : &description "This is my portfolio. I will update the details later"
+description              : &description "Portfolio of Mahdi Islam — deep learning and medical image analysis research, focused on segmentation, computer vision, and AI for healthcare."
 url                      : https://mahdiislam79.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "mahdiislam79/mahdiislam79.github.io"
@@ -126,7 +126,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Open Graph/Twitter default site image
+og_image                 : "site-logo.png" # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -218,6 +218,9 @@ collections:
   posters:
     output: true
     permalink: /posters/:path/
+  certifications:
+    output: true
+    permalink: /certifications/:path/
 
 
 
@@ -259,6 +262,14 @@ defaults:
       author_profile: true
       share: true
       comments: true
+  # _projects
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single
+      author_profile: true
+      share: true
   # _portfolio
   - scope:
       path: ""
@@ -274,6 +285,14 @@ defaults:
       type: talks
     values:
       layout: talk
+      author_profile: true
+      share: true
+  # _posters
+  - scope:
+      path: ""
+      type: posters
+    values:
+      layout: single
       author_profile: true
       share: true
 

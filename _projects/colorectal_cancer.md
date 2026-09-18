@@ -11,9 +11,9 @@ images:
   - "/images/colorectal_cancer/High_Grade_IN_and_Adenocarcinoma_outputs_Image_Processing.jpg"
   - "/images/colorectal_cancer/Low_Grade_IN_and_Serrated_Adenoma_output_samples_Image_Processing.jpg"
   - "/images/colorectal_cancer/Normal_and_Polyp_output_samples_Image_Processing.jpg"
-  - "/images/colorectal_cancer/Train Loss.png"
-  - "/images/colorectal_cancer/Valid Dice.png"
-  - "/images/colorectal_cancer/Valid Jaccard.png"
-  - "/images/colorectal_cancer/Valid Loss.png"
+  - "/images/colorectal_cancer/train-loss.jpg"
+  - "/images/colorectal_cancer/valid-dice.jpg"
+  - "/images/colorectal_cancer/valid-jaccard.jpg"
+  - "/images/colorectal_cancer/valid-loss.jpg"
 keywords: "Colorectal Cancer, Histopathology Image Classification, Gland Segmentation, Image Processing, Machine Learning, Deep Learning"
 ---
